@@ -15,6 +15,8 @@ class LoginVC: UIViewController {
         style()
     }
     
+    // MARK: - Private functions
+    
     private func style() {
         view.backgroundColor = UIColor.blue
     }
