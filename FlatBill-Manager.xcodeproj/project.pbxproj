@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		808AB3C32B8CBE080060FD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C22B8CBE080060FD60 /* AppDelegate.swift */; };
+		808AB3C52B8CBE080060FD60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C42B8CBE080060FD60 /* SceneDelegate.swift */; };
+		808AB3C72B8CBE080060FD60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C62B8CBE080060FD60 /* ViewController.swift */; };
+		808AB3CA2B8CBE080060FD60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AB3C82B8CBE080060FD60 /* Main.storyboard */; };
+		808AB3CD2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3CB2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld */; };
+		808AB3CF2B8CBE0A0060FD60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808AB3CE2B8CBE0A0060FD60 /* Assets.xcassets */; };
+		808AB3D22B8CBE0A0060FD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AB3D02B8CBE0A0060FD60 /* LaunchScreen.storyboard */; };
+		808AB3DD2B8CBE0A0060FD60 /* FlatBill_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3DC2B8CBE0A0060FD60 /* FlatBill_ManagerTests.swift */; };
+		808AB3E72B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3E62B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift */; };
+		808AB3E92B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3E82B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		808AB3D92B8CBE0A0060FD60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808AB3B72B8CBE080060FD60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808AB3BE2B8CBE080060FD60;
+			remoteInfo = "FlatBill-Manager";
+		};
+		808AB3E32B8CBE0A0060FD60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808AB3B72B8CBE080060FD60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808AB3BE2B8CBE080060FD60;
+			remoteInfo = "FlatBill-Manager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		808AB3BF2B8CBE080060FD60 /* FlatBill-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlatBill-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		808AB3C22B8CBE080060FD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		808AB3C42B8CBE080060FD60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		808AB3C62B8CBE080060FD60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		808AB3C92B8CBE080060FD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		808AB3CC2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlatBill_Manager.xcdatamodel; sourceTree = "<group>"; };
+		808AB3CE2B8CBE0A0060FD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		808AB3D12B8CBE0A0060FD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		808AB3D32B8CBE0A0060FD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808AB3D82B8CBE0A0060FD60 /* FlatBill-ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlatBill-ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		808AB3DC2B8CBE0A0060FD60 /* FlatBill_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatBill_ManagerTests.swift; sourceTree = "<group>"; };
+		808AB3E22B8CBE0A0060FD60 /* FlatBill-ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlatBill-ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		808AB3E62B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatBill_ManagerUITests.swift; sourceTree = "<group>"; };
+		808AB3E82B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatBill_ManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		808AB3BC2B8CBE080060FD60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AB3D52B8CBE0A0060FD60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AB3DF2B8CBE0A0060FD60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		808AB3B62B8CBE080060FD60 = {
+			isa = PBXGroup;
+			children = (
+				808AB3C12B8CBE080060FD60 /* FlatBill-Manager */,
+				808AB3DB2B8CBE0A0060FD60 /* FlatBill-ManagerTests */,
+				808AB3E52B8CBE0A0060FD60 /* FlatBill-ManagerUITests */,
+				808AB3C02B8CBE080060FD60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		808AB3C02B8CBE080060FD60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				808AB3BF2B8CBE080060FD60 /* FlatBill-Manager.app */,
+				808AB3D82B8CBE0A0060FD60 /* FlatBill-ManagerTests.xctest */,
+				808AB3E22B8CBE0A0060FD60 /* FlatBill-ManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		808AB3C12B8CBE080060FD60 /* FlatBill-Manager */ = {
+			isa = PBXGroup;
+			children = (
+				808AB3C22B8CBE080060FD60 /* AppDelegate.swift */,
+				808AB3C42B8CBE080060FD60 /* SceneDelegate.swift */,
+				808AB3C62B8CBE080060FD60 /* ViewController.swift */,
+				808AB3C82B8CBE080060FD60 /* Main.storyboard */,
+				808AB3CE2B8CBE0A0060FD60 /* Assets.xcassets */,
+				808AB3D02B8CBE0A0060FD60 /* LaunchScreen.storyboard */,
+				808AB3D32B8CBE0A0060FD60 /* Info.plist */,
+				808AB3CB2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld */,
+			);
+			path = "FlatBill-Manager";
+			sourceTree = "<group>";
+		};
+		808AB3DB2B8CBE0A0060FD60 /* FlatBill-ManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				808AB3DC2B8CBE0A0060FD60 /* FlatBill_ManagerTests.swift */,
+			);
+			path = "FlatBill-ManagerTests";
+			sourceTree = "<group>";
+		};
+		808AB3E52B8CBE0A0060FD60 /* FlatBill-ManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				808AB3E62B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift */,
+				808AB3E82B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift */,
+			);
+			path = "FlatBill-ManagerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		808AB3BE2B8CBE080060FD60 /* FlatBill-Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808AB3EC2B8CBE0A0060FD60 /* Build configuration list for PBXNativeTarget "FlatBill-Manager" */;
+			buildPhases = (
+				808AB3BB2B8CBE080060FD60 /* Sources */,
+				808AB3BC2B8CBE080060FD60 /* Frameworks */,
+				808AB3BD2B8CBE080060FD60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlatBill-Manager";
+			productName = "FlatBill-Manager";
+			productReference = 808AB3BF2B8CBE080060FD60 /* FlatBill-Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		808AB3D72B8CBE0A0060FD60 /* FlatBill-ManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808AB3EF2B8CBE0A0060FD60 /* Build configuration list for PBXNativeTarget "FlatBill-ManagerTests" */;
+			buildPhases = (
+				808AB3D42B8CBE0A0060FD60 /* Sources */,
+				808AB3D52B8CBE0A0060FD60 /* Frameworks */,
+				808AB3D62B8CBE0A0060FD60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				808AB3DA2B8CBE0A0060FD60 /* PBXTargetDependency */,
+			);
+			name = "FlatBill-ManagerTests";
+			productName = "FlatBill-ManagerTests";
+			productReference = 808AB3D82B8CBE0A0060FD60 /* FlatBill-ManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		808AB3E12B8CBE0A0060FD60 /* FlatBill-ManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808AB3F22B8CBE0A0060FD60 /* Build configuration list for PBXNativeTarget "FlatBill-ManagerUITests" */;
+			buildPhases = (
+				808AB3DE2B8CBE0A0060FD60 /* Sources */,
+				808AB3DF2B8CBE0A0060FD60 /* Frameworks */,
+				808AB3E02B8CBE0A0060FD60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				808AB3E42B8CBE0A0060FD60 /* PBXTargetDependency */,
+			);
+			name = "FlatBill-ManagerUITests";
+			productName = "FlatBill-ManagerUITests";
+			productReference = 808AB3E22B8CBE0A0060FD60 /* FlatBill-ManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		808AB3B72B8CBE080060FD60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					808AB3BE2B8CBE080060FD60 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					808AB3D72B8CBE0A0060FD60 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 808AB3BE2B8CBE080060FD60;
+					};
+					808AB3E12B8CBE0A0060FD60 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 808AB3BE2B8CBE080060FD60;
+					};
+				};
+			};
+			buildConfigurationList = 808AB3BA2B8CBE080060FD60 /* Build configuration list for PBXProject "FlatBill-Manager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 808AB3B62B8CBE080060FD60;
+			productRefGroup = 808AB3C02B8CBE080060FD60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808AB3BE2B8CBE080060FD60 /* FlatBill-Manager */,
+				808AB3D72B8CBE0A0060FD60 /* FlatBill-ManagerTests */,
+				808AB3E12B8CBE0A0060FD60 /* FlatBill-ManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		808AB3BD2B8CBE080060FD60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AB3D22B8CBE0A0060FD60 /* LaunchScreen.storyboard in Resources */,
+				808AB3CF2B8CBE0A0060FD60 /* Assets.xcassets in Resources */,
+				808AB3CA2B8CBE080060FD60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AB3D62B8CBE0A0060FD60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AB3E02B8CBE0A0060FD60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		808AB3BB2B8CBE080060FD60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AB3C72B8CBE080060FD60 /* ViewController.swift in Sources */,
+				808AB3CD2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld in Sources */,
+				808AB3C32B8CBE080060FD60 /* AppDelegate.swift in Sources */,
+				808AB3C52B8CBE080060FD60 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AB3D42B8CBE0A0060FD60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AB3DD2B8CBE0A0060FD60 /* FlatBill_ManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AB3DE2B8CBE0A0060FD60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AB3E92B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift in Sources */,
+				808AB3E72B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		808AB3DA2B8CBE0A0060FD60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808AB3BE2B8CBE080060FD60 /* FlatBill-Manager */;
+			targetProxy = 808AB3D92B8CBE0A0060FD60 /* PBXContainerItemProxy */;
+		};
+		808AB3E42B8CBE0A0060FD60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808AB3BE2B8CBE080060FD60 /* FlatBill-Manager */;
+			targetProxy = 808AB3E32B8CBE0A0060FD60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		808AB3C82B8CBE080060FD60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808AB3C92B8CBE080060FD60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		808AB3D02B8CBE0A0060FD60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808AB3D12B8CBE0A0060FD60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		808AB3EA2B8CBE0A0060FD60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		808AB3EB2B8CBE0A0060FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		808AB3ED2B8CBE0A0060FD60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 472JJKMC74;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FlatBill-Manager/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coutidarius.FlatBill-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		808AB3EE2B8CBE0A0060FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 472JJKMC74;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FlatBill-Manager/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coutidarius.FlatBill-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		808AB3F02B8CBE0A0060FD60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 472JJKMC74;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coutidarius.FlatBill-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatBill-Manager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlatBill-Manager";
+			};
+			name = Debug;
+		};
+		808AB3F12B8CBE0A0060FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 472JJKMC74;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coutidarius.FlatBill-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatBill-Manager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlatBill-Manager";
+			};
+			name = Release;
+		};
+		808AB3F32B8CBE0A0060FD60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 472JJKMC74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coutidarius.FlatBill-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FlatBill-Manager";
+			};
+			name = Debug;
+		};
+		808AB3F42B8CBE0A0060FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 472JJKMC74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coutidarius.FlatBill-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FlatBill-Manager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		808AB3BA2B8CBE080060FD60 /* Build configuration list for PBXProject "FlatBill-Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808AB3EA2B8CBE0A0060FD60 /* Debug */,
+				808AB3EB2B8CBE0A0060FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808AB3EC2B8CBE0A0060FD60 /* Build configuration list for PBXNativeTarget "FlatBill-Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808AB3ED2B8CBE0A0060FD60 /* Debug */,
+				808AB3EE2B8CBE0A0060FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808AB3EF2B8CBE0A0060FD60 /* Build configuration list for PBXNativeTarget "FlatBill-ManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808AB3F02B8CBE0A0060FD60 /* Debug */,
+				808AB3F12B8CBE0A0060FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808AB3F22B8CBE0A0060FD60 /* Build configuration list for PBXNativeTarget "FlatBill-ManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808AB3F32B8CBE0A0060FD60 /* Debug */,
+				808AB3F42B8CBE0A0060FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		808AB3CB2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				808AB3CC2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodel */,
+			);
+			currentVersion = 808AB3CC2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodel */;
+			path = FlatBill_Manager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 808AB3B72B8CBE080060FD60 /* Project object */;
+}
