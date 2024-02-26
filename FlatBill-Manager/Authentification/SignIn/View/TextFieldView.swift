@@ -37,7 +37,14 @@ class TextFieldView: UIView {
         textField.borderStyle = UITextField.BorderStyle.none
         textField.placeholder = "Enter your email"
         textField.backgroundColor = UIColor.white
-        textField.textColor = UIColor.black
+        textField.textColor = UIColor.gray
+        textField.layer.cornerRadius = 20.0
+        textField.layer.borderWidth = 1.0
+        textField.layer.borderColor = UIColor.lightGray.cgColor
+        ///create padding for the textfield text
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 40))
+        textField.leftView = paddingView
+        textField.leftViewMode = .always
     }
     
     /// view constraints
@@ -50,13 +57,14 @@ class TextFieldView: UIView {
 
         NSLayoutConstraint.activate([
             subTitleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
-            subTitleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8),
+            subTitleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
         ])
         NSLayoutConstraint.activate([
             textField.topAnchor.constraint(equalTo: subTitleLabel.bottomAnchor, constant: 4),
-            subTitleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8),
-            subTitleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -8),
-            subTitleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8)
+            textField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            textField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            textField.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8),
+            textField.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
 }
