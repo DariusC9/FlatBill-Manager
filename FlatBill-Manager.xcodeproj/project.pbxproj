@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		808AB3C32B8CBE080060FD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C22B8CBE080060FD60 /* AppDelegate.swift */; };
 		808AB3C52B8CBE080060FD60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C42B8CBE080060FD60 /* SceneDelegate.swift */; };
-		808AB3C72B8CBE080060FD60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C62B8CBE080060FD60 /* ViewController.swift */; };
-		808AB3CA2B8CBE080060FD60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AB3C82B8CBE080060FD60 /* Main.storyboard */; };
+		808AB3C72B8CBE080060FD60 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C62B8CBE080060FD60 /* TestController.swift */; };
 		808AB3CD2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3CB2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld */; };
 		808AB3CF2B8CBE0A0060FD60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808AB3CE2B8CBE0A0060FD60 /* Assets.xcassets */; };
 		808AB3D22B8CBE0A0060FD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AB3D02B8CBE0A0060FD60 /* LaunchScreen.storyboard */; };
@@ -40,8 +39,7 @@
 		808AB3BF2B8CBE080060FD60 /* FlatBill-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlatBill-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808AB3C22B8CBE080060FD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808AB3C42B8CBE080060FD60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		808AB3C62B8CBE080060FD60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		808AB3C92B8CBE080060FD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		808AB3C62B8CBE080060FD60 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		808AB3CC2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlatBill_Manager.xcdatamodel; sourceTree = "<group>"; };
 		808AB3CE2B8CBE0A0060FD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808AB3D12B8CBE0A0060FD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +101,7 @@
 			children = (
 				808AB3C22B8CBE080060FD60 /* AppDelegate.swift */,
 				808AB3C42B8CBE080060FD60 /* SceneDelegate.swift */,
-				808AB3C62B8CBE080060FD60 /* ViewController.swift */,
-				808AB3C82B8CBE080060FD60 /* Main.storyboard */,
+				808AB3C62B8CBE080060FD60 /* TestController.swift */,
 				808AB3CE2B8CBE0A0060FD60 /* Assets.xcassets */,
 				808AB3D02B8CBE0A0060FD60 /* LaunchScreen.storyboard */,
 				808AB3D32B8CBE0A0060FD60 /* Info.plist */,
@@ -236,7 +233,6 @@
 			files = (
 				808AB3D22B8CBE0A0060FD60 /* LaunchScreen.storyboard in Resources */,
 				808AB3CF2B8CBE0A0060FD60 /* Assets.xcassets in Resources */,
-				808AB3CA2B8CBE080060FD60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808AB3C72B8CBE080060FD60 /* ViewController.swift in Sources */,
+				808AB3C72B8CBE080060FD60 /* TestController.swift in Sources */,
 				808AB3CD2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld in Sources */,
 				808AB3C32B8CBE080060FD60 /* AppDelegate.swift in Sources */,
 				808AB3C52B8CBE080060FD60 /* SceneDelegate.swift in Sources */,
@@ -301,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		808AB3C82B8CBE080060FD60 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				808AB3C92B8CBE080060FD60 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		808AB3D02B8CBE0A0060FD60 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,7 +439,6 @@
 				INFOPLIST_FILE = "FlatBill-Manager/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +448,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coutidarius.FlatBill-Manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,7 +470,6 @@
 				INFOPLIST_FILE = "FlatBill-Manager/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,6 +479,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coutidarius.FlatBill-Manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
