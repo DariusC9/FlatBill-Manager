@@ -12,6 +12,8 @@ class LoginVC: UIViewController {
     let emailTextField = TextFieldView(title: "Email")
     let passwordTextField = TextFieldView(title: "Password", isSecureField: true)
     let loginButton = UIButton(type: .custom)
+    let noAccountView = UIView()
+    let noAccountLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,12 @@ class LoginVC: UIViewController {
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
         loginButton.isUserInteractionEnabled = false
+        
+        noAccountView.backgroundColor = .clear
+        
+        noAccountLabel.text = "Haven't registered yet?"
+        noAccountLabel.font = UIFont.systemFont(ofSize: 15) // to be changed
+        noAccountLabel.textColor = UIColor.gray
     }
     
     /// view constraints
@@ -40,10 +48,14 @@ class LoginVC: UIViewController {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
+        view.addSubview(noAccountView)
+        noAccountView.addSubview(noAccountLabel)
         
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         loginButton.translatesAutoresizingMaskIntoConstraints = false
+        noAccountView.translatesAutoresizingMaskIntoConstraints = false
+        noAccountLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             emailTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -60,6 +72,15 @@ class LoginVC: UIViewController {
             loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             loginButton.heightAnchor.constraint(equalToConstant: 55)
+        ])
+        NSLayoutConstraint.activate([
+            noAccountView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            noAccountView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -(view.frame.size.height/6))
+        ])
+        NSLayoutConstraint.activate([
+            noAccountLabel.centerXAnchor.constraint(equalTo: noAccountView.centerXAnchor),
+            noAccountLabel.topAnchor.constraint(equalTo: noAccountView.topAnchor),
+            noAccountLabel.bottomAnchor.constraint(equalTo: noAccountView.bottomAnchor)
         ])
     }
     
