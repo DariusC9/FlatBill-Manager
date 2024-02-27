@@ -16,6 +16,7 @@
 		808AB3E72B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3E62B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift */; };
 		808AB3E92B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3E82B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift */; };
 		80CEF7142B8DCE54007CF16C /* UIColor ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CEF7132B8DCE54007CF16C /* UIColor ext..swift */; };
+		80CEF7182B8DF5BF007CF16C /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CEF7172B8DF5BF007CF16C /* SignUpVC.swift */; };
 		80D2F3972B8CC42B00216DCD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F3962B8CC42B00216DCD /* LoginVC.swift */; };
 		80D2F39B2B8CCC6700216DCD /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F39A2B8CCC6700216DCD /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		808AB3E62B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatBill_ManagerUITests.swift; sourceTree = "<group>"; };
 		808AB3E82B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatBill_ManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		80CEF7132B8DCE54007CF16C /* UIColor ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor ext..swift"; sourceTree = "<group>"; };
+		80CEF7172B8DF5BF007CF16C /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		80D2F3962B8CC42B00216DCD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		80D2F39A2B8CCC6700216DCD /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,10 +142,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		80CEF7152B8DF59C007CF16C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				80CEF7162B8DF5A9007CF16C /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		80CEF7162B8DF5A9007CF16C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80CEF7172B8DF5BF007CF16C /* SignUpVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		80D2F3932B8CC38E00216DCD /* Authentification */ = {
 			isa = PBXGroup;
 			children = (
 				80D2F3982B8CCC1300216DCD /* SignIn */,
+				80CEF7152B8DF59C007CF16C /* SignUp */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -295,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CEF7182B8DF5BF007CF16C /* SignUpVC.swift in Sources */,
 				808AB3CD2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld in Sources */,
 				80CEF7142B8DCE54007CF16C /* UIColor ext..swift in Sources */,
 				80D2F39B2B8CCC6700216DCD /* TextFieldView.swift in Sources */,
