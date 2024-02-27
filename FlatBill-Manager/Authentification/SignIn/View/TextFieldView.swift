@@ -24,13 +24,17 @@ class TextFieldView: UIView {
         layout()
     }
     
+    convenience init(title: String, frame: CGRect = .zero) {
+        self.init(frame: frame)
+        subTitleLabel.text = title
+    }
+    
     // MARK: - Private functions
     
     /// view style
     private func style() {
         self.backgroundColor = .clear
 
-        subTitleLabel.text = "Email"
         subTitleLabel.font = UIFont.systemFont(ofSize: 18) // to be changed
         subTitleLabel.textColor = UIColor.black
 

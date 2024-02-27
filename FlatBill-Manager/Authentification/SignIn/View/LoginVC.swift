@@ -9,7 +9,7 @@ import UIKit
 
 class LoginVC: UIViewController {
     
-    let emailTextField = TextFieldView()
+    let emailTextField = TextFieldView(title: "Email")
 
     override func viewDidLoad() {
         super.viewDidLoad()
