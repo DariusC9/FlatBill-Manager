@@ -18,6 +18,7 @@ class LoginVC: UIViewController {
 
         style()
         layout()
+        setupValidationForNotEmptyTextFields()
     }
     
     // MARK: - Private functions
@@ -26,11 +27,12 @@ class LoginVC: UIViewController {
     private func style() {
         view.backgroundColor = UIColor.white
         
-        loginButton.backgroundColor = UIColor.appBlue
+        loginButton.backgroundColor = UIColor.lightGray
         loginButton.setTitle("Login", for: .normal)
         loginButton.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
+        loginButton.isUserInteractionEnabled = false
     }
     
     /// view constraints
@@ -60,6 +62,15 @@ class LoginVC: UIViewController {
             loginButton.heightAnchor.constraint(equalToConstant: 55)
         ])
     }
+    
+    private func setupValidationForNotEmptyTextFields() {
+        emailTextField.textField.addTarget(self,
+                                           action: #selector(textFieldsIsNotEmpty),
+                                           for: .editingChanged)
+        passwordTextField.textField.addTarget(self,
+                                           action: #selector(textFieldsIsNotEmpty),
+                                           for: .editingChanged)
+    }
 }
 
     // MARK: - Actions
@@ -68,5 +79,23 @@ extension LoginVC {
     
     @objc func loginPressed(sender: UIButton!) {
       print("login pressed")
+    }
+    
+    @objc func textFieldsIsNotEmpty(sender: UITextField) {
+        
+        sender.text = sender.text?.trimmingCharacters(in: .whitespaces)
+        
+        guard
+            let email = emailTextField.textField.text, !email.isEmpty,
+            let password = passwordTextField.textField.text, !password.isEmpty
+        else
+        {
+            loginButton.isUserInteractionEnabled = false
+            loginButton.backgroundColor = UIColor.lightGray
+            return
+        }
+        
+        loginButton.isUserInteractionEnabled = true
+        loginButton.backgroundColor = UIColor.appBlue
     }
 }
