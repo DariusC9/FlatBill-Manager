@@ -10,7 +10,7 @@ import UIKit
 class LoginVC: UIViewController {
     
     let emailTextField = TextFieldView(title: "Email")
-    let passwordTextField = TextFieldView(title: "Password")
+    let passwordTextField = TextFieldView(title: "Password", isSecureField: true)
 
     override func viewDidLoad() {
         super.viewDidLoad()
