@@ -10,6 +10,7 @@ import UIKit
 class LoginVC: UIViewController {
     
     let emailTextField = TextFieldView(title: "Email")
+    let passwordTextField = TextFieldView(title: "Password")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +29,20 @@ class LoginVC: UIViewController {
     /// view constraints
     private func layout() {
         view.addSubview(emailTextField)
+        view.addSubview(passwordTextField)
         
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             emailTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            emailTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            emailTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -(view.frame.size.height/6))
+        ])
+        NSLayoutConstraint.activate([
+            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 16),
+            passwordTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            passwordTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
 }
