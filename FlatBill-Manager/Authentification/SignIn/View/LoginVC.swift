@@ -11,6 +11,7 @@ class LoginVC: UIViewController {
     
     let emailTextField = TextFieldView(title: "Email")
     let passwordTextField = TextFieldView(title: "Password", isSecureField: true)
+    let loginButton = UIButton(type: .custom)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +25,23 @@ class LoginVC: UIViewController {
     /// view style
     private func style() {
         view.backgroundColor = UIColor.white
+        
+        loginButton.backgroundColor = UIColor.appBlue
+        loginButton.setTitle("Login", for: .normal)
+        loginButton.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
+        loginButton.layer.cornerRadius = 10
+        loginButton.clipsToBounds = true
     }
     
     /// view constraints
     private func layout() {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
+        view.addSubview(loginButton)
         
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             emailTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -44,5 +53,20 @@ class LoginVC: UIViewController {
             passwordTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             passwordTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+        NSLayoutConstraint.activate([
+            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 32),
+            loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            loginButton.heightAnchor.constraint(equalToConstant: 55)
+        ])
+    }
+}
+
+    // MARK: - Actions
+
+extension LoginVC {
+    
+    @objc func loginPressed(sender: UIButton!) {
+      print("login pressed")
     }
 }
