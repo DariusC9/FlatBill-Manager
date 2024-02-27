@@ -117,7 +117,7 @@ extension LoginVC {
     
     @objc func registerPressed(sender: UIButton!) {
         let destinationVC = SignUpVC()
-        self.navigationController?.pushViewController(destinationVC, animated: true)
+        show(destinationVC, sender: self)
     }
     
     @objc func textFieldsIsNotEmpty(sender: UITextField) {
