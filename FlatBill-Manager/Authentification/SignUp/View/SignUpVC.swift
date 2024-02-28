@@ -15,6 +15,9 @@ class SignUpVC: UIViewController {
     let passwordTextField = TextFieldView(title: "Password", isSecureField: true)
     let confirmPasswordTextField = TextFieldView(title: "Confirm Password", isSecureField: true)
     let signUpButton = UIButton(type: .custom)
+    let tosView = UIView()
+    let tosLabel = UILabel()
+    let tosButton = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +44,16 @@ class SignUpVC: UIViewController {
         signUpButton.layer.cornerRadius = 10
         signUpButton.clipsToBounds = true
         signUpButton.isUserInteractionEnabled = false
+        
+        tosView.backgroundColor = .clear
+        
+        tosLabel.text = "By signing up, you agree to our"
+        tosLabel.font = UIFont.systemFont(ofSize: 15) // to be changed
+        tosLabel.textColor = UIColor.gray
+        
+        tosButton.setTitle("Terms of services", for: .normal)
+        tosButton.setTitleColor(UIColor.appBlue, for: .normal)
+        tosButton.addTarget(self, action: #selector(tosPressed), for: .touchUpInside)
     }
     
     /// view constraints
@@ -51,9 +64,15 @@ class SignUpVC: UIViewController {
         stackView.addArrangedSubview(passwordTextField)
         stackView.addArrangedSubview(confirmPasswordTextField)
         view.addSubview(signUpButton)
+        view.addSubview(tosView)
+        tosView.addSubview(tosLabel)
+        tosView.addSubview(tosButton)
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
+        tosView.translatesAutoresizingMaskIntoConstraints = false
+        tosLabel.translatesAutoresizingMaskIntoConstraints = false
+        tosButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -66,6 +85,21 @@ class SignUpVC: UIViewController {
             signUpButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             signUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             signUpButton.heightAnchor.constraint(equalToConstant: 55)
+        ])
+        NSLayoutConstraint.activate([
+            tosView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            tosView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -(view.frame.size.height/8))
+        ])
+        NSLayoutConstraint.activate([
+            tosLabel.topAnchor.constraint(equalTo: tosView.topAnchor),
+            tosLabel.leadingAnchor.constraint(equalTo: tosView.leadingAnchor),
+            tosLabel.bottomAnchor.constraint(equalTo: tosView.bottomAnchor)
+        ])
+        NSLayoutConstraint.activate([
+            tosButton.topAnchor.constraint(equalTo: tosView.topAnchor),
+            tosButton.leadingAnchor.constraint(equalTo: tosLabel.trailingAnchor, constant: 4),
+            tosButton.trailingAnchor.constraint(equalTo: tosView.trailingAnchor),
+            tosButton.bottomAnchor.constraint(equalTo: tosView.bottomAnchor)
         ])
     }
     
@@ -91,6 +125,10 @@ extension SignUpVC {
     
     @objc func signUpPressed(sender: UIButton!) {
         print("sign up pressed")
+    }
+    
+    @objc func tosPressed(sender: UIButton!) {
+        print("tos pressed")
     }
     
     @objc func textFieldsIsNotEmpty(sender: UITextField) {
