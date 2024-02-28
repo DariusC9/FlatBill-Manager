@@ -18,6 +18,9 @@ class SignUpVC: UIViewController {
     let tosView = UIView()
     let tosLabel = UILabel()
     let tosButton = UIButton(type: .system)
+    let privacyView = UIView()
+    let privacyLabel = UILabel()
+    let privacyButton = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +57,16 @@ class SignUpVC: UIViewController {
         tosButton.setTitle("Terms of services", for: .normal)
         tosButton.setTitleColor(UIColor.appBlue, for: .normal)
         tosButton.addTarget(self, action: #selector(tosPressed), for: .touchUpInside)
+        
+        privacyView.backgroundColor = .clear
+        
+        privacyLabel.text = "and"
+        privacyLabel.font = UIFont.systemFont(ofSize: 15) // to be changed
+        privacyLabel.textColor = UIColor.gray
+        
+        privacyButton.setTitle("Privacy policy", for: .normal)
+        privacyButton.setTitleColor(UIColor.appBlue, for: .normal)
+        privacyButton.addTarget(self, action: #selector(tosPressed), for: .touchUpInside)
     }
     
     /// view constraints
@@ -67,12 +80,18 @@ class SignUpVC: UIViewController {
         view.addSubview(tosView)
         tosView.addSubview(tosLabel)
         tosView.addSubview(tosButton)
+        view.addSubview(privacyView)
+        privacyView.addSubview(privacyLabel)
+        privacyView.addSubview(privacyButton)
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
         tosView.translatesAutoresizingMaskIntoConstraints = false
         tosLabel.translatesAutoresizingMaskIntoConstraints = false
         tosButton.translatesAutoresizingMaskIntoConstraints = false
+        privacyView.translatesAutoresizingMaskIntoConstraints = false
+        privacyLabel.translatesAutoresizingMaskIntoConstraints = false
+        privacyButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -100,6 +119,21 @@ class SignUpVC: UIViewController {
             tosButton.leadingAnchor.constraint(equalTo: tosLabel.trailingAnchor, constant: 4),
             tosButton.trailingAnchor.constraint(equalTo: tosView.trailingAnchor),
             tosButton.bottomAnchor.constraint(equalTo: tosView.bottomAnchor)
+        ])
+        NSLayoutConstraint.activate([
+            privacyView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            privacyView.topAnchor.constraint(equalTo: tosView.bottomAnchor)
+        ])
+        NSLayoutConstraint.activate([
+            privacyLabel.topAnchor.constraint(equalTo: privacyView.topAnchor),
+            privacyLabel.leadingAnchor.constraint(equalTo: privacyView.leadingAnchor),
+            privacyLabel.bottomAnchor.constraint(equalTo: privacyView.bottomAnchor)
+        ])
+        NSLayoutConstraint.activate([
+            privacyButton.topAnchor.constraint(equalTo: privacyView.topAnchor),
+            privacyButton.leadingAnchor.constraint(equalTo: privacyLabel.trailingAnchor, constant: 4),
+            privacyButton.trailingAnchor.constraint(equalTo: privacyView.trailingAnchor),
+            privacyButton.bottomAnchor.constraint(equalTo: privacyView.bottomAnchor)
         ])
     }
     
