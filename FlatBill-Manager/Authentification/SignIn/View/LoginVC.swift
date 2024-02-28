@@ -121,9 +121,7 @@ extension LoginVC {
     }
     
     @objc func textFieldsIsNotEmpty(sender: UITextField) {
-        
         sender.text = sender.text?.trimmingCharacters(in: .whitespaces)
-        
         guard
             let email = emailTextField.textField.text, !email.isEmpty,
             let password = passwordTextField.textField.text, !password.isEmpty
