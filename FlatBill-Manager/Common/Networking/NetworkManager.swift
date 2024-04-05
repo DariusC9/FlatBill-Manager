@@ -9,7 +9,7 @@ import Foundation
 
 /// Protocol needed for  NetworkManager
 protocol NetworkService {
-    var url: URL { get }
+    var url: URL? { get }
     func fetchData() async throws -> Data
 }
 /// Protocol needed for NetworkManager

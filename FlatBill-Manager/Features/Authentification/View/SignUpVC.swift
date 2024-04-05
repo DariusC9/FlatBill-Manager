@@ -9,6 +9,17 @@ import UIKit
 
 class SignUpVC: UIViewController {
     
+    let viewModel: SignUpViewModel
+    
+    init(viewModel: SignUpViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     let stackView = UIStackView()
     let usernameTextField = TextFieldView(title: "Username")
     let emailTextField = TextFieldView(title: "Email")
@@ -162,7 +173,10 @@ extension SignUpVC {
     }
     
     @objc func tosPressed(sender: UIButton!) {
-        print("tos pressed")
+        Task {
+            let tos = await viewModel.fetchTos()
+            print(tos)
+        }
     }
     
     @objc func textFieldsIsNotEmpty(sender: UITextField) {
