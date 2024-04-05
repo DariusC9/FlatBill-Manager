@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		803F563C2BC023E600B7BAE6 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F563B2BC023E600B7BAE6 /* SignUpViewModel.swift */; };
+		803F56422BC0286C00B7BAE6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F56412BC0286C00B7BAE6 /* NetworkManager.swift */; };
 		808AB3C32B8CBE080060FD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C22B8CBE080060FD60 /* AppDelegate.swift */; };
 		808AB3C52B8CBE080060FD60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3C42B8CBE080060FD60 /* SceneDelegate.swift */; };
 		808AB3CD2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3CB2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		803F563B2BC023E600B7BAE6 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		803F56412BC0286C00B7BAE6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		808AB3BF2B8CBE080060FD60 /* FlatBill-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlatBill-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808AB3C22B8CBE080060FD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808AB3C42B8CBE080060FD60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		803F563E2BC0260100B7BAE6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				803F56402BC0283900B7BAE6 /* Networking */,
 				80CEF7122B8DCE39007CF16C /* Extensions */,
 			);
 			path = Common;
@@ -116,6 +119,14 @@
 				80D2F39A2B8CCC6700216DCD /* TextFieldView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		803F56402BC0283900B7BAE6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				803F56412BC0286C00B7BAE6 /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		808AB3B62B8CBE080060FD60 = {
@@ -317,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803F56422BC0286C00B7BAE6 /* NetworkManager.swift in Sources */,
 				80CEF7182B8DF5BF007CF16C /* SignUpVC.swift in Sources */,
 				808AB3CD2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld in Sources */,
 				803F563C2BC023E600B7BAE6 /* SignUpViewModel.swift in Sources */,
