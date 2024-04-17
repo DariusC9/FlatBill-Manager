@@ -17,23 +17,19 @@ struct TosNetworkManager {
             let tos = try decoder.decode(TosModel.self, from: data)
             return tos
         } catch {
-            print("error conversion")
-            throw URLError(.backgroundSessionWasDisconnected)
+            throw TosNetworkError.errorConversion
         }
     }
     
     private func fetchData() async throws -> Data {
         guard let url else {
-            print("error url")
-            throw URLError(.badURL)
+            throw TosNetworkError.badUrl
         }
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             return data
         } catch {
-            print("error data")
-            // TODO: Add custom errors for validation
-            throw URLError(.badServerResponse)
+            throw TosNetworkError.dataError
         }
     }
 }
