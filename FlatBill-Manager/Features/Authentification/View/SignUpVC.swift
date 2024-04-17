@@ -175,7 +175,10 @@ extension SignUpVC {
     @objc func tosPressed(sender: UIButton!) {
         Task {
             let tos = await viewModel.fetchTos()
-            print(tos)
+            if let tos {
+                let vcDestination = TosVC(tosText: tos)
+                present(UINavigationController(rootViewController: vcDestination), animated: true)
+            }
         }
     }
     
