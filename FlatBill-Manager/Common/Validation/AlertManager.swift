@@ -21,4 +21,8 @@ class AlertManager {
         alert.addAction(okAction)
         return alert
     }
+    
+    func resetAlert() {
+        error = nil
+    }
 }

@@ -116,7 +116,7 @@ extension LoginVC {
     }
     
     @objc func registerPressed(sender: UIButton!) {
-        let viewModel = SignUpViewModel(tosNetworkManager: TosNetworkManager())
+        let viewModel = SignUpViewModel(tosNetworkManager: TosNetworkManager(), alertManager: AlertManager())
         let destinationVC = SignUpVC(viewModel: viewModel)
         show(destinationVC, sender: self)
     }
