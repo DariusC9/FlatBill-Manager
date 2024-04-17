@@ -8,5 +8,5 @@
 import Foundation
 
 struct TosModel: Codable {
-    let text: String
+    let tosText: String
 }

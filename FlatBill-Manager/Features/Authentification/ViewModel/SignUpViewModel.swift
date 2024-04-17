@@ -18,7 +18,7 @@ class SignUpViewModel {
     func fetchTos() async -> String? {
         do {
             let tos = try await tosNetworkManager.fetchTos()
-            return tos.text
+            return tos.tosText
         } catch {
             return nil
         }

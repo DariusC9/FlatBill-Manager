@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		803101182BCFD71000C91F42 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803101172BCFD71000C91F42 /* ApiKeys.swift */; };
 		803F563C2BC023E600B7BAE6 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F563B2BC023E600B7BAE6 /* SignUpViewModel.swift */; };
 		803F56422BC0286C00B7BAE6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F56412BC0286C00B7BAE6 /* NetworkManager.swift */; };
 		803F564D2BC0321200B7BAE6 /* TosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F564C2BC0321200B7BAE6 /* TosModel.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		803101172BCFD71000C91F42 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		803F563B2BC023E600B7BAE6 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		803F56412BC0286C00B7BAE6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		803F564C2BC0321200B7BAE6 /* TosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TosModel.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				803F56402BC0283900B7BAE6 /* Networking */,
 				80CEF7122B8DCE39007CF16C /* Extensions */,
+				803101172BCFD71000C91F42 /* ApiKeys.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				80CEF7142B8DCE54007CF16C /* UIColor ext..swift in Sources */,
 				80D2F39B2B8CCC6700216DCD /* TextFieldView.swift in Sources */,
 				808AB3C32B8CBE080060FD60 /* AppDelegate.swift in Sources */,
+				803101182BCFD71000C91F42 /* ApiKeys.swift in Sources */,
 				803F564D2BC0321200B7BAE6 /* TosModel.swift in Sources */,
 				808AB3C52B8CBE080060FD60 /* SceneDelegate.swift in Sources */,
 				80D2F3972B8CC42B00216DCD /* LoginVC.swift in Sources */,
