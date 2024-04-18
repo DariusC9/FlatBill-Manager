@@ -47,6 +47,7 @@ class SignUpVC: UIViewController {
     private func style() {
         view.backgroundColor = UIColor.white
         self.title = "Create account"
+        viewModel.delegate = self
         
         stackView.axis = .vertical
         stackView.distribution  = .fillEqually
@@ -174,13 +175,10 @@ extension SignUpVC {
     
     @objc func tosPressed(sender: UIButton!) {
         Task {
-            do {
-                let tos = try await viewModel.fetchTos()
+            let tos = await viewModel.fetchTos()
+            if let tos, !tos.isEmpty {
                 let vcDestination = TosVC(tosText: tos)
                 present(UINavigationController(rootViewController: vcDestination), animated: true)
-            } catch {
-                let alert = viewModel.getAlert()
-                present(alert, animated: true)
             }
         }
     }
@@ -201,5 +199,17 @@ extension SignUpVC {
         
         signUpButton.isUserInteractionEnabled = true
         signUpButton.backgroundColor = UIColor.appBlue
+    }
+}
+
+// MARK: - Actions
+
+extension SignUpVC: SignUpDelegate {
+    func showAlert(_ alertData: CustomErrorProtocol) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            let alert = AlertManager.getAlert(error: alertData)
+            self.present(alert, animated: true)
+        }
     }
 }

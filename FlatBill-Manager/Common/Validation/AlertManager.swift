@@ -7,22 +7,12 @@
 
 import UIKit
 
-class AlertManager {
+struct AlertManager {
     
-    private var error: CustomErrorProtocol?
-    
-    func setError(error: CustomErrorProtocol) {
-        self.error = error
-    }
-    
-    func getAlert() -> UIAlertController {
-        let alert = UIAlertController(title: error?.title, message: error?.message, preferredStyle: .alert)
+    static func getAlert(error: CustomErrorProtocol) -> UIAlertController {
+        let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .cancel)
         alert.addAction(okAction)
         return alert
-    }
-    
-    func resetAlert() {
-        error = nil
     }
 }

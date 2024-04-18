@@ -7,30 +7,33 @@
 
 import SwiftUI
 
+protocol SignUpDelegate: AnyObject {
+    func showAlert(_ alertData: CustomErrorProtocol)
+}
+
 class SignUpViewModel {
     
     private let tosNetworkManager: TosNetworkManager
     private let alertManager: AlertManager
+    
+    weak var delegate: SignUpDelegate?
     
     init(tosNetworkManager: TosNetworkManager, alertManager: AlertManager) {
         self.tosNetworkManager = tosNetworkManager
         self.alertManager = alertManager
     }
     
-    func fetchTos() async throws -> String {
-        alertManager.resetAlert()
+    func fetchTos() async -> String? {
         do {
             let tos = try await tosNetworkManager.fetchTos()
             return tos.tosText
         } catch {
             if let error = error as? CustomErrorProtocol {
-                alertManager.setError(error: error)
+                delegate?.showAlert(error)
+            } else {
+                delegate?.showAlert(TosNetworkError.general)
             }
-            throw TosNetworkError.badUrl
         }
-    }
-    
-    func getAlert() -> UIAlertController {
-        alertManager.getAlert()
+        return nil
     }
 }
