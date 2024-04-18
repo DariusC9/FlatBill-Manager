@@ -25,6 +25,8 @@
 		808AB3DD2B8CBE0A0060FD60 /* FlatBill_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3DC2B8CBE0A0060FD60 /* FlatBill_ManagerTests.swift */; };
 		808AB3E72B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3E62B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift */; };
 		808AB3E92B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AB3E82B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift */; };
+		80B459B02BD1636E00625865 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B459AF2BD1636E00625865 /* PrivacyVC.swift */; };
+		80B459B22BD166EE00625865 /* PrivactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B459B12BD166EE00625865 /* PrivactModel.swift */; };
 		80CEF7142B8DCE54007CF16C /* UIColor ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CEF7132B8DCE54007CF16C /* UIColor ext..swift */; };
 		80CEF7182B8DF5BF007CF16C /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CEF7172B8DF5BF007CF16C /* SignUpVC.swift */; };
 		80D2F3972B8CC42B00216DCD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F3962B8CC42B00216DCD /* LoginVC.swift */; };
@@ -71,6 +73,8 @@
 		808AB3E22B8CBE0A0060FD60 /* FlatBill-ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlatBill-ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808AB3E62B8CBE0A0060FD60 /* FlatBill_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatBill_ManagerUITests.swift; sourceTree = "<group>"; };
 		808AB3E82B8CBE0A0060FD60 /* FlatBill_ManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatBill_ManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80B459AF2BD1636E00625865 /* PrivacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
+		80B459B12BD166EE00625865 /* PrivactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivactModel.swift; sourceTree = "<group>"; };
 		80CEF7132B8DCE54007CF16C /* UIColor ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor ext..swift"; sourceTree = "<group>"; };
 		80CEF7172B8DF5BF007CF16C /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		80D2F3962B8CC42B00216DCD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				80D2F3962B8CC42B00216DCD /* LoginVC.swift */,
 				80CEF7172B8DF5BF007CF16C /* SignUpVC.swift */,
 				803101192BCFF85E00C91F42 /* TosVC.swift */,
+				80B459AF2BD1636E00625865 /* PrivacyVC.swift */,
 				80D2F39A2B8CCC6700216DCD /* TextFieldView.swift */,
 			);
 			path = View;
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				803F564C2BC0321200B7BAE6 /* TosModel.swift */,
+				80B459B12BD166EE00625865 /* PrivactModel.swift */,
 				803F564E2BC032A100B7BAE6 /* TosNetworkManager.swift */,
 			);
 			path = Model;
@@ -383,12 +389,14 @@
 				808AB3CD2B8CBE080060FD60 /* FlatBill_Manager.xcdatamodeld in Sources */,
 				803F56512BC03B2400B7BAE6 /* Data ext..swift in Sources */,
 				803F563C2BC023E600B7BAE6 /* SignUpViewModel.swift in Sources */,
+				80B459B02BD1636E00625865 /* PrivacyVC.swift in Sources */,
 				8031011D2BD0022600C91F42 /* TosNetworkError.swift in Sources */,
 				80CEF7142B8DCE54007CF16C /* UIColor ext..swift in Sources */,
 				80D2F39B2B8CCC6700216DCD /* TextFieldView.swift in Sources */,
 				803101222BD0046B00C91F42 /* CustomErrorProtocol.swift in Sources */,
 				808AB3C32B8CBE080060FD60 /* AppDelegate.swift in Sources */,
 				803101182BCFD71000C91F42 /* ApiKeys.swift in Sources */,
+				80B459B22BD166EE00625865 /* PrivactModel.swift in Sources */,
 				803F564D2BC0321200B7BAE6 /* TosModel.swift in Sources */,
 				808AB3C52B8CBE080060FD60 /* SceneDelegate.swift in Sources */,
 				80D2F3972B8CC42B00216DCD /* LoginVC.swift in Sources */,

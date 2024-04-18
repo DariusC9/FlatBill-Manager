@@ -78,7 +78,7 @@ class SignUpVC: UIViewController {
         
         privacyButton.setTitle("Privacy policy", for: .normal)
         privacyButton.setTitleColor(UIColor.appBlue, for: .normal)
-        privacyButton.addTarget(self, action: #selector(tosPressed), for: .touchUpInside)
+        privacyButton.addTarget(self, action: #selector(privacyPressed), for: .touchUpInside)
     }
     
     /// view constraints
@@ -178,6 +178,16 @@ extension SignUpVC {
             let tos = await viewModel.fetchTos()
             if let tos, !tos.isEmpty {
                 let vcDestination = TosVC(tosText: tos)
+                present(UINavigationController(rootViewController: vcDestination), animated: true)
+            }
+        }
+    }
+    
+    @objc func privacyPressed(sender: UIButton!) {
+        Task {
+            let tos = await viewModel.fetchPrivacy()
+            if let tos, !tos.isEmpty {
+                let vcDestination = PrivacyVC(privacyText: tos)
                 present(UINavigationController(rootViewController: vcDestination), animated: true)
             }
         }

@@ -14,12 +14,14 @@ protocol SignUpDelegate: AnyObject {
 class SignUpViewModel {
     
     private let tosNetworkManager: TosNetworkManager
+    private let privacyNetworkManager: PrivacyNetwork
     private let alertManager: AlertManager
     
     weak var delegate: SignUpDelegate?
     
-    init(tosNetworkManager: TosNetworkManager, alertManager: AlertManager) {
+    init(tosNetworkManager: TosNetworkManager, privacyNetworkManager: PrivacyNetwork, alertManager: AlertManager) {
         self.tosNetworkManager = tosNetworkManager
+        self.privacyNetworkManager = privacyNetworkManager
         self.alertManager = alertManager
     }
     
@@ -27,6 +29,20 @@ class SignUpViewModel {
         do {
             let tos = try await tosNetworkManager.fetchTos()
             return tos.tosText
+        } catch {
+            if let error = error as? CustomErrorProtocol {
+                delegate?.showAlert(error)
+            } else {
+                delegate?.showAlert(TosNetworkError.general)
+            }
+        }
+        return nil
+    }
+    
+    func fetchPrivacy() async -> String? {
+        do {
+            let privacy = try await privacyNetworkManager.fetchTos()
+            return privacy.privacyText
         } catch {
             if let error = error as? CustomErrorProtocol {
                 delegate?.showAlert(error)

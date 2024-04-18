@@ -33,3 +33,30 @@ struct TosNetworkManager {
         }
     }
 }
+
+struct PrivacyNetwork {
+    let url: URL? = URL(string: ApiKeys.privacyKey)
+    
+    func fetchTos() async throws -> PrivacyModel {
+        do {
+            let data = try await fetchData()
+            let decoder = JSONDecoder()
+            let privacy = try decoder.decode(PrivacyModel.self, from: data)
+            return privacy
+        } catch {
+            throw TosNetworkError.errorConversion
+        }
+    }
+    
+    private func fetchData() async throws -> Data {
+        guard let url else {
+            throw TosNetworkError.badUrl
+        }
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            return data
+        } catch {
+            throw TosNetworkError.dataError
+        }
+    }
+}
