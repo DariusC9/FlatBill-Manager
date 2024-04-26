@@ -170,7 +170,12 @@ class SignUpVC: UIViewController {
 extension SignUpVC {
     
     @objc func signUpPressed(sender: UIButton!) {
-        print("sign up pressed")
+        Task {
+            await viewModel.signUp(username: usernameTextField.textField.text,
+                                   email: emailTextField.textField.text,
+                                   password: passwordTextField.textField.text,
+                                   confPassword: confirmPasswordTextField.textField.text)
+        }
     }
     
     @objc func tosPressed(sender: UIButton!) {

@@ -15,14 +15,37 @@ class SignUpViewModel {
     
     private let tosNetworkManager: TosNetworkManager
     private let privacyNetworkManager: PrivacyNetwork
+    private let userManager: UserNetworkManager
     private let alertManager: AlertManager
     
     weak var delegate: SignUpDelegate?
     
-    init(tosNetworkManager: TosNetworkManager, privacyNetworkManager: PrivacyNetwork, alertManager: AlertManager) {
+    init(tosNetworkManager: TosNetworkManager, privacyNetworkManager: PrivacyNetwork, userManager: UserNetworkManager, alertManager: AlertManager) {
         self.tosNetworkManager = tosNetworkManager
         self.privacyNetworkManager = privacyNetworkManager
+        self.userManager = userManager
         self.alertManager = alertManager
+    }
+    
+    func signUp(username: String?, email: String?, password: String?, confPassword: String?) async {
+        guard let username = username, !username.isEmpty else {
+            return
+        }
+        guard let email = email, !email.isEmpty else {
+            return
+        }
+        guard let password = password, !password.isEmpty else {
+            return
+        }
+        guard let confPassword = confPassword, !confPassword.isEmpty else {
+            return
+        }
+        
+        do {
+            try await userManager.signUp(email: email, password: password)
+        } catch {
+            // TODO: validation errors
+        }
     }
     
     func fetchTos() async -> String? {
