@@ -31,16 +31,19 @@ class SignUpViewModel {
         guard let username = username, !username.isEmpty else {
             return
         }
-        guard let email = email, !email.isEmpty else {
+        guard let email = email, !email.isEmpty, email.isEmailAddressStructureValid() else {
             return
         }
-        guard let password = password, !password.isEmpty else {
+        guard let password = password, !password.isEmpty, password.passwordStrength else {
             return
         }
-        guard let confPassword = confPassword, !confPassword.isEmpty else {
+        guard let confPassword = confPassword, !confPassword.isEmpty, confPassword.passwordStrength else {
             return
         }
-        
+        guard password == confPassword else {
+            return
+        }
+        print("it goes throu")
         do {
             try await userManager.signUp(name: username, email: email, password: password)
         } catch {
