@@ -21,7 +21,19 @@ struct UserNetworkManager {
         let user = User(name: name, email: email, password: password)
         
         let encoded = try JSONEncoder().encode(user)
-        let (_data, _response) = try await URLSession.shared.upload(for: request, from: encoded)
-        // TODO: handle response
+        let (data, response) = try await URLSession.shared.upload(for: request, from: encoded)
+        
+        if let httpResponse = response as? HTTPURLResponse {
+            if httpResponse.statusCode == 400 {
+                do {
+                    let error = try JSONDecoder().decode(ErrorServer.self, from: data)
+                    print("=================")
+                    print("\(error)")
+                    print("=================")
+                } catch {
+                    print("another error")
+                }
+            }
+        }
     }
 }
