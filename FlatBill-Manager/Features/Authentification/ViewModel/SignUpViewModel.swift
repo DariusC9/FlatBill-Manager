@@ -42,7 +42,7 @@ class SignUpViewModel {
         }
         
         do {
-            try await userManager.signUp(email: email, password: password)
+            try await userManager.signUp(name: username, email: email, password: password)
         } catch {
             // TODO: validation errors
         }

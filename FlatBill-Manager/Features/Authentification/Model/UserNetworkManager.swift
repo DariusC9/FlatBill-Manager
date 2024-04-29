@@ -10,7 +10,7 @@ import Foundation
 struct UserNetworkManager {
     let url: URL? = URL(string: ApiKeys.signUp)
     
-    func signUp(email: String, password: String) async throws {
+    func signUp(name: String, email: String, password: String) async throws {
         guard let url else {
             throw TosNetworkError.badUrl
         }
@@ -18,10 +18,10 @@ struct UserNetworkManager {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        let user = User(email: email, password: password)
+        let user = User(name: name, email: email, password: password)
         
         let encoded = try JSONEncoder().encode(user)
-        let (data, response) = try await URLSession.shared.upload(for: request, from: encoded)
+        let (_data, _response) = try await URLSession.shared.upload(for: request, from: encoded)
         // TODO: handle response
     }
 }
