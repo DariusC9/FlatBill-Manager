@@ -139,8 +139,8 @@
 		803F563A2BC023BB00B7BAE6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				803F563B2BC023E600B7BAE6 /* SignUpViewModel.swift */,
 				801E41B92BE235D20006DB9B /* LoginViewModel.swift */,
+				803F563B2BC023E600B7BAE6 /* SignUpViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

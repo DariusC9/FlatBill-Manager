@@ -27,6 +27,7 @@ struct LoginNetworkManager {
             if 200 <= httpResponse.statusCode && httpResponse.statusCode <= 300 {
                 do {
                     let user = try JSONDecoder().decode(User.self, from: data)
+                    print(user)
                     return user
                 } catch {
                     throw TosNetworkError.general

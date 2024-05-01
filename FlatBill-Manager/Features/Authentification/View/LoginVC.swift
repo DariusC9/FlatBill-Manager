@@ -123,7 +123,10 @@ class LoginVC: UIViewController {
 extension LoginVC {
     
     @objc func loginPressed(sender: UIButton!) {
-      print("login pressed")
+        Task {
+            await viewModel.login(email: emailTextField.textField.text,
+                                  password: passwordTextField.textField.text)
+        }
     }
     
     @objc func registerPressed(sender: UIButton!) {
