@@ -9,6 +9,17 @@ import UIKit
 
 class LoginVC: UIViewController {
     
+    let viewModel: LoginViewModel
+    
+    init(viewModel: LoginViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     let emailTextField = TextFieldView(title: "Email")
     let passwordTextField = TextFieldView(title: "Password", isSecureField: true)
     let loginButton = UIButton(type: .custom)

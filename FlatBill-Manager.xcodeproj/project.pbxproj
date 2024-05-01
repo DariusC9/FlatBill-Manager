@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801E41B82BE2332B0006DB9B /* LoginNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801E41B72BE2332B0006DB9B /* LoginNetworkManager.swift */; };
+		801E41BA2BE235D20006DB9B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801E41B92BE235D20006DB9B /* LoginViewModel.swift */; };
 		803101182BCFD71000C91F42 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803101172BCFD71000C91F42 /* ApiKeys.swift */; };
 		8031011A2BCFF85E00C91F42 /* TosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803101192BCFF85E00C91F42 /* TosVC.swift */; };
 		8031011D2BD0022600C91F42 /* TosNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031011C2BD0022600C91F42 /* TosNetworkError.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		801E41B72BE2332B0006DB9B /* LoginNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkManager.swift; sourceTree = "<group>"; };
+		801E41B92BE235D20006DB9B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		803101172BCFD71000C91F42 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		803101192BCFF85E00C91F42 /* TosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TosVC.swift; sourceTree = "<group>"; };
 		8031011C2BD0022600C91F42 /* TosNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TosNetworkError.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				803F563B2BC023E600B7BAE6 /* SignUpViewModel.swift */,
+				801E41B92BE235D20006DB9B /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				80C1DBD12BDBD09A002F50DC /* User.swift */,
 				80C1DBD32BDBD1F2002F50DC /* UserNetworkManager.swift */,
 				80EBD87E2BDFC763009A5B7D /* ErrorServer.swift */,
+				801E41B72BE2332B0006DB9B /* LoginNetworkManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -404,8 +410,10 @@
 				80EBD87F2BDFC763009A5B7D /* ErrorServer.swift in Sources */,
 				80C1DBD42BDBD1F2002F50DC /* UserNetworkManager.swift in Sources */,
 				803F563C2BC023E600B7BAE6 /* SignUpViewModel.swift in Sources */,
+				801E41B82BE2332B0006DB9B /* LoginNetworkManager.swift in Sources */,
 				80B459B02BD1636E00625865 /* PrivacyVC.swift in Sources */,
 				80C1DBD22BDBD09A002F50DC /* User.swift in Sources */,
+				801E41BA2BE235D20006DB9B /* LoginViewModel.swift in Sources */,
 				8031011D2BD0022600C91F42 /* TosNetworkError.swift in Sources */,
 				80CEF7142B8DCE54007CF16C /* UIColor ext..swift in Sources */,
 				80D2F39B2B8CCC6700216DCD /* TextFieldView.swift in Sources */,
